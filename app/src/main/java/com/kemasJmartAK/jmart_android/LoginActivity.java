@@ -28,6 +28,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        TextView register = findViewById(R.id.registernowLogin);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
         EditText textemail = findViewById(R.id.emailLogin);
         EditText textpassword = findViewById(R.id.passwordLogin);
         Button buttonlogin = findViewById(R.id.buttonLogin);
