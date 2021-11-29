@@ -33,7 +33,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
+        android:inputType="textVisiblePassword|textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
