@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
                         try {
                             JSONObject object = new JSONObject(response);
                             if(object != null){
-                                Toast.makeText(RegisterActivity.this, "Register Success!", Toast.LENGTH_SHORT);
+                                Toast.makeText(RegisterActivity.this, "Register Success!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 loggedAccount = gson.fromJson(object.toString(), Account.class);
                                 startActivity(intent);
@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                         catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(RegisterActivity.this, "Register Error!", Toast.LENGTH_SHORT);
+                            Toast.makeText(RegisterActivity.this, "Register Error!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 };

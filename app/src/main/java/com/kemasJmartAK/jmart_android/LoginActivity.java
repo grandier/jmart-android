@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                         try {
                             JSONObject object = new JSONObject(response);
                             if(object != null){
-                                Toast.makeText(LoginActivity.this, "Login Success!", Toast.LENGTH_SHORT);
+                                Toast.makeText(LoginActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 loggedAccount = gson.fromJson(object.toString(), Account.class);
                                 startActivity(intent);
@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                         catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(LoginActivity.this, "Login Error!", Toast.LENGTH_SHORT);
+                            Toast.makeText(LoginActivity.this, "Login Error!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 };
