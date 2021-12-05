@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProductActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="Create Product"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/nameInputCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="\tName"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/weightInputCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="\tWeight"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/priceInputCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="\tPrice"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/discountInputCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="\tDiscount"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Condition"
+                    android:layout_marginTop="305dp"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"
+                    android:textSize="25sp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/newButtonCreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="290dp"
+                        android:layout_marginLeft="0dp"
+                        android:text="New"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        android:id="@+id/usedButtonCreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="290dp"
+                        android:layout_marginLeft="0dp"
+                        android:textSize="20sp"
+                        android:text="Used" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/categoryCreate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Category"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/categoryDrawCreate"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/productCategory"
+                    android:minHeight="48dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shipmentCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="390dp"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:text="Shipment Plans"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/shipmentDrawCreate"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="400dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/shipmentPlans"
+                    android:minHeight="48dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/registerProductButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="470dp"
+                    android:text="Create" />
+
+                <Button
+                    android:id="@+id/cancelProductButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="470dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/registerProductButton"
+                    android:text="Cancel" />
+
+            </RelativeLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        
+        
+
+    </LinearLayout>
+
+
+</LinearLayout>

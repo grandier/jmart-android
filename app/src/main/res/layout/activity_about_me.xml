@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMeActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profileImage"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="Name"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/emailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameUser"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profileImage"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="false"
+            android:text="E-mail"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-70dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#dad51d"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_account_balance_wallet_24" />
+
+                <TextView
+                    android:id="@+id/moneyBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:text="0.0"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/moneyDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/moneyBalance"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:text="Balance"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#dad51d"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/insertTopUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:hint="Top Up Amount"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/topUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Top Up" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="425dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#dad51d"
+            app:cardElevation="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/storeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="b1Clicked"
+                    android:text="Register Store"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/registerStoreLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/registerStoreDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="Register Store"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/nameStoreCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="0dp"
+                        android:ems="10"
+                        android:hint="\tName"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/addressStoreCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="0dp"
+                        android:ems="10"
+                        android:hint="\tAddress"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/phoneStoreCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginRight="0dp"
+                        android:ems="10"
+                        android:hint="\tPhone Number"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/registerStoreButton"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="200dp"
+                        android:onClick="b2Clicked"
+                        android:text="Create" />
+
+                    <Button
+                        android:id="@+id/cancelStoreButton"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_toRightOf="@id/registerStoreButton"
+                        android:onClick="b3Clicked"
+                        android:text="Cancel" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/storeFinishLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/finishStoreDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="Store"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/storeName"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="Name"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/storeNameDesc"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_toRightOf="@id/storeName"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="PT...."
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/storeAddress"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="Address"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/storeAddressDesc"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_toRightOf="@id/storeAddress"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="JL...."
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/storePhone"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="Phone Number"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/storePhoneDesc"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_toRightOf="@id/storeAddress"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="+62..."
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</LinearLayout>

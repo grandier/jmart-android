@@ -3,9 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21710526315789475" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/cut_card_background.xml" value="0.13508771929824562" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_baseline_account_balance_wallet_24.xml" value="0.13508771929824562" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.13508771929824562" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.21710526315789475" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.13508771929824562" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.21710526315789475" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21710526315789475" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_about_me.xml" value="0.264" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_create_product.xml" value="0.20018115942028986" />
         <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_login.xml" value="0.21842105263157896" />
-        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_main.xml" value="0.21842105263157896" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/activity_register.xml" value="0.21842105263157896" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/fragment_fragment1.xml" value="0.2" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/layout/fragment_fragment2.xml" value="0.2" />
+        <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmart-android/app/src/main/res/menu/top_menu.xml" value="0.20350877192982456" />
         <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmartandroid/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmartandroid/app/src/main/res/layout/activity_main.xml" value="0.21842105263157896" />
         <entry key="..\:/Users/rafly/Documents/PTN Stuff/UI Kuliah/Semester 3/Pemrograman Berorientasi Objek - 02/Praktikum/Project/jmartandroid/app/src/main/res/layout/activity_register.xml" value="0.264" />
