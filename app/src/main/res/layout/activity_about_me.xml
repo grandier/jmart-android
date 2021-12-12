@@ -121,10 +121,11 @@
                     android:ems="10"
                     android:hint="Top Up Amount"
                     android:inputType="number"
+                    android:minHeight="48dp"
                     android:textSize="15sp" />
 
                 <Button
-                    android:id="@+id/topUpButton"
+                    android:id="@+id/buttonTopUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -159,7 +160,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginTop="10dp"
-                    android:onClick="b1Clicked"
                     android:text="Register Store"
                     android:visibility="gone"/>
 
@@ -226,7 +226,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="200dp"
-                        android:onClick="b2Clicked"
                         android:text="Create" />
 
                     <Button
@@ -236,7 +235,6 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="200dp"
                         android:layout_toRightOf="@id/registerStoreButton"
-                        android:onClick="b3Clicked"
                         android:text="Cancel" />
                 </RelativeLayout>
 

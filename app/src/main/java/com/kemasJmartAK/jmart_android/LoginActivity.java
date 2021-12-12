@@ -17,7 +17,7 @@ import org.json.*;
 
 public class LoginActivity extends AppCompatActivity {
     private static final Gson gson = new Gson();
-    private static Account loggedAccount = null;
+    public static Account loggedAccount = null;
 
     public static Account getLoggedAccount(){
         return loggedAccount;
