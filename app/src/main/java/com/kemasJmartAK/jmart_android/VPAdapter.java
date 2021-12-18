@@ -8,6 +8,10 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
+/**
+ * Activity that can make you view different fragment
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class VPAdapter extends FragmentPagerAdapter {
 
     private final ArrayList<Fragment> fragmentArrayList = new ArrayList<>();

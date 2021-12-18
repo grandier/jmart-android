@@ -1,5 +1,9 @@
 package com.kemasJmartAK.jmart_android.model;
 
+/**
+ * model as a ProductCategory similar to backend
+ * @author Kemas Rafly Omar Thoriq
+ */
 public enum ProductCategory {
     BOOK,
     KITCHEN,

@@ -7,6 +7,10 @@ import com.kemasJmartAK.jmart_android.LoginActivity;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Creating request about TopUp to add balance
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class TopUpRequest extends StringRequest {
     private static final String URL =  "http://10.0.2.2:6969/account/" + LoginActivity.getLoggedAccount().id + "/topUp";
     private final Map<String , String> params;

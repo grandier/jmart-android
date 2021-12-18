@@ -6,13 +6,17 @@
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Search Button"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="ifRoom|collapseActionView"/>
+        app:showAsAction="collapseActionView|always"/>
 
     <item android:id="@+id/create_product"
         android:icon="@drawable/ic_baseline_add_box_24"
         android:title="Add Product"
-        android:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="ifRoom|collapseActionView"/>
+        app:showAsAction="collapseActionView|always"/>
+
+    <item android:id="@+id/history_button"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="History Button"
+        app:showAsAction="collapseActionView|always"/>
 
     <item android:id="@+id/account_button"
         android:icon="@drawable/ic_baseline_person_24"

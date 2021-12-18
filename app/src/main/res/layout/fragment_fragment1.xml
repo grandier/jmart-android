@@ -17,7 +17,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/prev_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
@@ -25,7 +25,7 @@
                 android:text="prev" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/next_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
@@ -33,7 +33,7 @@
                 android:text="Next" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/position"
                 android:layout_width="128dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -43,29 +43,19 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/go_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
                 android:text="go" />
-
         </LinearLayout>
 
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/emptyTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No Result"
-            android:textSize="20sp"
-            android:visibility="gone"
-            android:layout_gravity="center"/>
     </LinearLayout>
 
 </FrameLayout>

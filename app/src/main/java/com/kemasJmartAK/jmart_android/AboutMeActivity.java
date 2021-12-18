@@ -22,14 +22,30 @@ import com.kemasJmartAK.jmart_android.request.TopUpRequest;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+
+/**
+ * Activity that serve information about account, registering store, store information, and invoice store
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class AboutMeActivity extends AppCompatActivity {
 
     private static final Gson gson = new Gson();
     private static Store storeAccount = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
+
+        Button logout = (Button) findViewById(R.id.buttonLogout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+            Intent intent = new Intent(AboutMeActivity.this, LoginActivity.class);
+            startActivity(intent);
+            }
+        });
 
         TextView name = (TextView) findViewById(R.id.nameUser);
         name.setText("" + LoginActivity.getLoggedAccount().name);
@@ -38,7 +54,7 @@ public class AboutMeActivity extends AppCompatActivity {
         email.setText("" + LoginActivity.getLoggedAccount().email);
 
         TextView balance = (TextView) findViewById(R.id.moneyBalance);
-        balance.setText("" + LoginActivity.getLoggedAccount().balance);
+        balance.setText("Rp. " + LoginActivity.getLoggedAccount().balance);
 
         Button buttonTopUP = (Button) findViewById(R.id.buttonTopUp);
         EditText topUpInput = (EditText) findViewById(R.id.insertTopUp);
@@ -57,6 +73,7 @@ public class AboutMeActivity extends AppCompatActivity {
                         }
                         LoginActivity.loggedAccount.balance += Double.parseDouble(topUpInput.getText().toString());
                         finish();
+                        overridePendingTransition(0,0);
                         startActivity(getIntent());
                     }
                 };
@@ -69,6 +86,7 @@ public class AboutMeActivity extends AppCompatActivity {
         Button registerButton = (Button) findViewById(R.id.storeButton);
         Button registerStore = (Button) findViewById(R.id.registerStoreButton);
         Button cancelRegister = (Button) findViewById(R.id.cancelStoreButton);
+        Button historyStore = (Button) findViewById(R.id.historyStoreButton);
         EditText nameRegisterStore = (EditText) findViewById(R.id.nameStoreCreate);
         EditText addressRegisterStore = (EditText) findViewById(R.id.addressStoreCreate);
         EditText phoneNumberRegisterStore = (EditText) findViewById(R.id.phoneStoreCreate);
@@ -122,8 +140,10 @@ public class AboutMeActivity extends AppCompatActivity {
                             JSONObject object = new JSONObject(response);
                             Toast.makeText(AboutMeActivity.this, "Create Store Success!", Toast.LENGTH_SHORT).show();
                             LoginActivity.loggedAccount.store = gson.fromJson(object.toString(),Store.class);
-                            System.out.println(LoginActivity.loggedAccount.store);
                             finish();
+                            Intent intent = new Intent(AboutMeActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            overridePendingTransition(0,0);
                             startActivity(getIntent());
                         }catch (JSONException e){
                             e.printStackTrace();
@@ -134,6 +154,14 @@ public class AboutMeActivity extends AppCompatActivity {
                 RegisterStoreRequest request = new RegisterStoreRequest(LoginActivity.getLoggedAccount().id,nameRegisterStore.getText().toString(),addressRegisterStore.getText().toString(),phoneNumberRegisterStore.getText().toString(),listener,null);
                 RequestQueue requestQueue = Volley.newRequestQueue(AboutMeActivity.this);
                 requestQueue.add(request);
+            }
+        });
+
+        historyStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AboutMeActivity.this, StoreInvoiceActivity.class);
+                startActivity(intent);
             }
         });
     }

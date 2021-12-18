@@ -15,6 +15,10 @@ import com.kemasJmartAK.jmart_android.request.RegisterRequest;
 
 import org.json.*;
 
+/**
+ * Activity that can make you register yourself with your own account
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class RegisterActivity extends AppCompatActivity {
 
     private static final Gson gson = new Gson();

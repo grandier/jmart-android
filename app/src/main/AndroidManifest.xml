@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kemasJmartAK.jmart_android">
+    package="com.kemasJmartAK.jmart_android" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,13 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jmartandroid"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
-            android:name=".CreateProductActivity"
+            android:name=".PersonalInvoiceActivity"
+            android:label="Personal Invoice"
             android:exported="false" />
         <activity
+            android:name=".HistoryDetailActivity"
+            android:label="History Detail"
+            android:exported="false" />
+        <activity
+            android:name=".StoreInvoiceActivity"
+            android:label="Store Invoice"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false"
+            android:label="Product Detail" />
+        <activity
+            android:name=".CreateProductActivity"
+            android:exported="false"
+            android:label="Create Product" />
+        <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

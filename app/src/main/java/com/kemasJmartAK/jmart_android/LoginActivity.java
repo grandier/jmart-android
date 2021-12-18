@@ -15,6 +15,10 @@ import com.kemasJmartAK.jmart_android.model.Account;
 
 import org.json.*;
 
+/**
+ * Activity that can logged you in the app
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class LoginActivity extends AppCompatActivity {
     private static final Gson gson = new Gson();
     public static Account loggedAccount = null;
@@ -49,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject object = new JSONObject(response);
                             if(object != null){
                                 Toast.makeText(LoginActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
+
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 loggedAccount = gson.fromJson(object.toString(), Account.class);
                                 startActivity(intent);

@@ -1,5 +1,9 @@
 package com.kemasJmartAK.jmart_android.model;
 
+/**
+ * model as a Product similar to backend
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class Product extends Serializable{
     public int accountId;
     public double discount;

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D4AC2B"
+    tools:context=".HistoryDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profileImageHistory"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_baseline_description_24" />
+
+        <TextView
+            android:id="@+id/nameProductHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/profileImageHistory"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="Name"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statusHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#fece2f"
+                    android:text="Status"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#FFFFFF"
+                    android:text="Status"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buyerIdHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#fece2f"
+                    android:text="Buyer_Number"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="#FFFFFF"
+                    android:text="Buyer ID"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

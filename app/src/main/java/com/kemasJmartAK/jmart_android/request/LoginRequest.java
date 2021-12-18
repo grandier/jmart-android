@@ -6,6 +6,10 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * creating request about Login
+ * @author Kemas Rafly Omar Thoriq
+ */
 public class LoginRequest extends StringRequest {
     private static final String URL = "http://10.0.2.2:6969/account/login";
     private final Map<String, String> params;

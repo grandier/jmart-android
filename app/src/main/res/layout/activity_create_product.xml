@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateProductActivity"
+    android:background="#B05E27"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#fece2f"
+        android:background="#FFCE45"
         android:padding="20dp">
 
         <TextView
@@ -37,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="#fece2f"
+            app:cardBackgroundColor="#FFCE45"
             app:cardElevation="15dp">
 
             <RelativeLayout
@@ -115,32 +116,23 @@
                     android:includeFontPadding="false"
                     android:textSize="25sp"/>
 
-                <RadioGroup
+                <CheckBox
+                    android:id="@+id/newCheckCreate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="New" />
 
-                    <RadioButton
-                        android:id="@+id/newButtonCreate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="290dp"
-                        android:layout_marginLeft="0dp"
-                        android:text="New"
-                        android:textSize="20sp"/>
-
-                    <RadioButton
-                        android:id="@+id/usedButtonCreate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="290dp"
-                        android:layout_marginLeft="0dp"
-                        android:textSize="20sp"
-                        android:text="Used" />
-                </RadioGroup>
+                <CheckBox
+                    android:id="@+id/usedCheckCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="Used" />
 
             </LinearLayout>
 
@@ -229,17 +221,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_toRightOf="@id/registerProductButton"
                     android:text="Cancel" />
-
             </RelativeLayout>
-
-
-
         </com.google.android.material.card.MaterialCardView>
-
-        
-        
-
     </LinearLayout>
-
-
 </LinearLayout>

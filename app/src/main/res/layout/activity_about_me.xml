@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutMeActivity"
+    android:background="#B05E27"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#fece2f"
+        android:background="#FFCE45"
         android:padding="20dp">
 
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="200dp"
+            android:layout_below="@+id/emailUser"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/profileImage"
+            android:text="LogOut" />
 
         <ImageView
             android:id="@+id/profileImage"
@@ -25,7 +36,6 @@
             android:id="@+id/nameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/profileImage"
             android:fontFamily="sans-serif-black"
@@ -49,16 +59,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:padding="20dp"
-        android:layout_marginTop="-70dp">
+        android:layout_marginTop="-50dp">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="125dp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#dad51d"
+            app:cardBackgroundColor="#FFCE45"
             app:cardElevation="10dp">
 
             <RelativeLayout
@@ -104,7 +114,7 @@
             android:layout_height="125dp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#dad51d"
+            app:cardBackgroundColor="#FFCE45"
             app:cardElevation="10dp">
 
             <RelativeLayout
@@ -139,14 +149,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="-5dp"
         android:padding="10dp">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_height="425dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="#dad51d"
+            app:cardBackgroundColor="#FFCE45"
             app:cardElevation="15dp">
 
             <RelativeLayout
@@ -248,19 +259,28 @@
                         android:id="@+id/finishStoreDesc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="sans-serif-medium"
                         android:includeFontPadding="false"
                         android:text="Store"
                         android:textSize="30sp" />
 
+                    <Button
+                        android:id="@+id/historyStoreButton"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/finishStoreDesc"
+                        android:text="History" />
+
                     <TextView
                         android:id="@+id/storeName"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="60dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginTop="60dp"
                         android:fontFamily="sans-serif-medium"
                         android:includeFontPadding="false"
                         android:text="Name"
@@ -305,8 +325,8 @@
                         android:id="@+id/storePhone"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="140dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginTop="140dp"
                         android:fontFamily="sans-serif-medium"
                         android:includeFontPadding="false"
                         android:text="Phone Number"
@@ -325,7 +345,7 @@
                         android:textSize="17sp" />
                 </RelativeLayout>
             </RelativeLayout>
-        </com.google.android.material.card.MaterialCardView>
 
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </LinearLayout>
